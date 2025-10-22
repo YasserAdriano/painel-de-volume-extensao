@@ -1,12 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Meu Super Volume",
-  "version": "3.0",
-  "description": "Controla o volume de 0% a 500% para todas as abas em um painel.",
+  "name": "Meu Super Volume (v4 - Chrome/Meet)",
+  "version": "4.0",
+  "description": "Controla o volume de 0% a 500% para todas as abas, com modo de captura para Meet.",
   "permissions": [
     "scripting",
     "storage",
-    "tabs"
+    "tabs",
+    "tabCapture",
+    "offscreen"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -14,5 +16,13 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "offscreen": {
+    "path": "offscreen.html",
+    "reason": "AUDIO_PLAYBACK",
+    "justification": "Necessário para processar o áudio da aba (tabCapture) sem que o service worker seja encerrado."
   }
 }
