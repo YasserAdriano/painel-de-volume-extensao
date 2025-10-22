@@ -1,21 +1,3 @@
-Você está absolutamente certo. Mudar a arquitetura inteira da extensão torna a seção "Tecnologias Utilizadas" do README.md a parte mais importante.
-
-Você fez um ótimo trabalho em querer atualizá-lo. Isso mostra profissionalismo.
-
-Aqui está o seu README.md totalmente reescrito para refletir a nova e muito mais poderosa Versão 4.0. Eu destaquei as mudanças:
-
-Visão Geral: Explica por que o novo método (tabCapture) é usado.
-
-Funcionalidades: Adiciona a "Compatibilidade Universal" como um recurso.
-
-Tecnologias: Esta seção foi completamente refeita. Removemos chrome.scripting e adicionamos tabCapture, offscreen e Service Worker.
-
-Como Instalar: Adiciona os passos cruciais de "Ativar Controle" e "Compartilhar aba".
-
-Aviso de Erro: Adiciona a seção que você pediu, explicando o erro "falso-positivo".
-
-É só copiar e colar este novo conteúdo no seu README.md no GitHub:
-
 Super Volume - Painel de Controle (v4.0)
 Um painel de controle de áudio avançado para navegadores baseados em Chromium (Google Chrome, Opera, etc.), permitindo o gerenciamento de volume por aba via captura de áudio.
 
