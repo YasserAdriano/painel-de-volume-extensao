@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 350px;
+      max-height: 400px;
+      overflow-y: auto;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+    }
+    h3 {
+      color: #ff4136;
+      text-align: center;
+      margin-top: 0;
+      border-bottom: 1px solid #555;
+      padding-bottom: 10px;
+    }
+    #tabListContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .tab-control-item {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #333;
+    }
+    .tab-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.9em;
+    }
+    .tab-info img {
+      width: 16px;
+      height: 16px;
+    }
+    .tab-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 300px;
+    }
+    .control-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    input[type="range"] {
+      width: 65%;
+      cursor: pointer;
+      accent-color: #ff4136;
+    }
+    input[type="number"] {
+      width: 70px;
+      font-size: 1.1em;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      border: 1px solid #555;
+      border-radius: 4px;
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .credits {
+      margin-top: 15px;
+      text-align: right;
+      font-size: 0.8em;
+      font-style: italic;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h3>Painel de Volume</h3>
+  
+  <div id="tabListContainer"></div>
+
+  <p class="credits">made by Yasser</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

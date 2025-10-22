@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Meu Super Volume",
+  "version": "3.0",
+  "description": "Controla o volume de 0% a 500% para todas as abas em um painel.",
+  "permissions": [
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
